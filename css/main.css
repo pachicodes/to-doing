@@ -6,3 +6,29 @@ body {
 span {
     font-family: 'Permanent Marker', cursive;
 }
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 600px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.534);
+}
+header {
+    padding: 20px;
+    font-size: 1.5em;    
+}
+
+div {
+    padding: 20px;
+}
+
+
+footer {
+    font-size: 1em;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    margin: 20px;
+
+}
