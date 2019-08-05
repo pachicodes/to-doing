@@ -24,6 +24,9 @@ div {
     padding: 20px;
 }
 
+.done {
+    background: rgb(199, 198, 198);
+}
 
 footer {
     font-size: 1em;
