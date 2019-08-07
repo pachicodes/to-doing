@@ -9,10 +9,10 @@ let todo = [];
 
 btn.addEventListener('click', function() {
     todo.push(task.value);
-    list.innerHTML = `${todo}`;
-    
+    list.innerHTML = `<li>${todo.join('<br>')}</li>`;  
 
 
-} )
+    } 
+)
 
 
