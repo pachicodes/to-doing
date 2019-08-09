@@ -11,8 +11,7 @@ btn.addEventListener('click', function() {
     todo.push(task.value);
     list.innerHTML = `<li>${todo.join('<br>')}</li>`;
     task.value = '';
-    task.focus();
-    
+    task.focus();    
 } 
 )
 
