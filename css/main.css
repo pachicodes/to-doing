@@ -25,6 +25,10 @@ div {
     padding: 20px;
 }
 
+li {
+    padding: 20px;
+}
+
 .done {
     background: rgb(199, 198, 198);
 }
