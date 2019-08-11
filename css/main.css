@@ -29,8 +29,9 @@ li {
     padding: 20px;
 }
 
-.done {
-    background: rgb(199, 198, 198);
+.todo__btn {
+    background: #fff;
+    color: tomato;
 }
 
 footer {

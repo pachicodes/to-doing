@@ -9,10 +9,17 @@ let todo = [];
 
 btn.addEventListener('click', function() {
     todo.push(task.value);
-    list.innerHTML = `<input type="checkbox">${todo.join('<br>')}`;
+    list.innerHTML = `<li><input type="checkbox"> ${todo.join('<br>')}   <button data-xbtn class="todo__btn">x</button></li>`;
     task.value = '';
     task.focus();    
 } 
+)
+
+let xbtn = document.querySelector("[data-xbtn]");
+
+xbtn.addEventListener('click', function() {
+    todo.pull(task.value);
+}
 )
 
 
