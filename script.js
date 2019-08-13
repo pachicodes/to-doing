@@ -13,7 +13,14 @@ btn.addEventListener('click', function() {
     let xbtn = Array.from(document.querySelectorAll('[data-xbtn]'));
     xbtn.map(button => {
         button.addEventListener('click', function(event) {
-            event.target.parentNode.remove()
+            event.target.parentNode.remove();
+        })
+    });
+
+    let check = Array.from(document.querySelectorAll('[data-check]'));
+    check.map(input => {
+        input.addEventListener('click', function(event) {
+            event.target.parentNode.style.setProperty("text-decoration", "line-through");
         })
     });
 
