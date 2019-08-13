@@ -5,22 +5,35 @@ span.innerHTML = `${name}`;
 let task = document.querySelector("[data-task]");
 let btn = document.querySelector("[data-btn]");
 let list = document.querySelector("[data-list]");
-let todo = [];
 
 btn.addEventListener('click', function() {
-    todo.push(task.value);
-    list.innerHTML = `<li><input type="checkbox"> ${todo.join('<br>')}   <button data-xbtn class="todo__btn">x</button></li>`;
+    let value = task.value;
+    list.insertAdjacentHTML('afterbegin', `<li><input data-check type="checkbox"> ${value} <button data-xbtn class="todo__btn">x</button></li>`);
+    let xbtn = Array.from(documen.querySelector('[data-xbtn]'));
+    xbtn.map(button => {
+        button.addEventListener('click', function(event) {
+            event.target.parentNode.remove()
+        })
+    });
+    
     task.value = '';
     task.focus();    
 } 
 )
 
+let check = document.querySelector("[data-check]");
 let xbtn = document.querySelector("[data-xbtn]");
 
-xbtn.addEventListener('click', function() {
-    todo.pull(task.value);
+/*
+check.addEventListener('click', function() {
+    //create function that will cross item
+
 }
 )
 
+xbtn.addEventListener('click', function() {
+    //create function that will delete item
+})
 
+*/
 
